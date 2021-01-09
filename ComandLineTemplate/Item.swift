@@ -17,3 +17,17 @@ extension Item: CustomStringConvertible {
         return self.name + ", " + String(self.sellIn) + ", " + String(self.quality);
     }
 }
+
+extension Item {
+    func increaseQuality() {
+        quality += 1
+    }
+    
+    func decreaseQuality() {
+        quality -= 1
+    }
+    
+    func setQualityToZero() {
+        quality = 0
+    }
+}
