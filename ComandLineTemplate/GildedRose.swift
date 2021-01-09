@@ -15,43 +15,51 @@ public class GildedRose {
     }
     
     func age(item: Item) {
-        if (item.name != "Sulfuras, Hand of Ragnaros") {
-            item.decreaseSellIn()
+        if (item.name == "Sulfuras, Hand of Ragnaros") {
+            return
         }
+        
+        item.decreaseSellIn()
     }
     
+    func update(item: Item) {
+        if (item.name == "Sulfuras, Hand of Ragnaros") {
+            return
+        }
+        
+        item.decreaseQuality()
+    }
+    
+    
     public func updateItem(item: Item) {
-        if (item.name == "Aged Brie" || item.name == "Backstage passes to a TAFKAL80ETC concert") {
+        age(item: item)
+        
+        if (item.name == "Aged Brie") {
             item.increaseQuality()
-            if (item.name == "Backstage passes to a TAFKAL80ETC concert") {
-                if (item.sellIn < 11) {
-                    item.increaseQuality()
-                }
-                
-                if (item.sellIn < 6) {
-                    item.increaseQuality()
-                }
+            if (item.sellIn < 0) {
+                item.increaseQuality()
+            }
+        } else if (item.name == "Backstage passes to a TAFKAL80ETC concert") {
+            item.increaseQuality()
+
+            if (item.sellIn < 11) {
+                item.increaseQuality()
+            }
+            
+            if (item.sellIn < 6) {
+                item.increaseQuality()
+            }
+            
+            if (item.sellIn < 0) {
+                item.setQualityToZero()
             }
         } else {
-            if (item.name != "Sulfuras, Hand of Ragnaros") {
-                item.decreaseQuality()
+            update(item: item)
+            
+            if (item.sellIn < 0) {
+                update(item: item)
             }
         }
 
-        age(item: item)
-        
-        if (item.sellIn < 0) {
-            if (item.name != "Aged Brie") {
-                if (item.name != "Backstage passes to a TAFKAL80ETC concert") {
-                    if (item.name != "Sulfuras, Hand of Ragnaros") {
-                        item.decreaseQuality()
-                    }
-                } else {
-                    item.setQualityToZero()
-                }
-            } else {
-                item.increaseQuality()
-            }
-        }
     }
 }

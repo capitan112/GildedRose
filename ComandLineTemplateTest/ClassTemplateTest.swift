@@ -6,7 +6,7 @@
 //  Copyright © 2019 Oleksiy Chebotarov. All rights reserved.
 //
 import XCTest
-@testable import ComandLineTemplate
+//@testable import ComandLineTemplate
 
 class ClassTemplateTest: XCTestCase {
     var app: GildedRose!
