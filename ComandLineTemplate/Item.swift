@@ -20,11 +20,15 @@ extension Item: CustomStringConvertible {
 
 extension Item {
     func increaseQuality() {
-        quality += 1
+        if quality < 50 {
+            quality += 1
+        }
     }
     
     func decreaseQuality() {
-        quality -= 1
+        if quality > 0 {
+            quality -= 1
+        }
     }
     
     func setQualityToZero() {
