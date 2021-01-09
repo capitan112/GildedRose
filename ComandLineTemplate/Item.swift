@@ -30,4 +30,8 @@ extension Item {
     func setQualityToZero() {
         quality = 0
     }
+    
+    func decreaseSellIn() {
+        sellIn -= 1
+    }
 }

@@ -23,7 +23,7 @@ public class GildedRose {
             }
         } else {
             if (item.quality < 50) {
-                item.quality = item.quality + 1
+                item.increaseQuality()
                 
                 if (item.name == "Backstage passes to a TAFKAL80ETC concert") {
                     if (item.sellIn < 11) {
@@ -42,7 +42,7 @@ public class GildedRose {
         }
         
         if (item.name != "Sulfuras, Hand of Ragnaros") {
-            item.sellIn = item.sellIn - 1
+            item.decreaseSellIn()
         }
         
         if (item.sellIn < 0) {
