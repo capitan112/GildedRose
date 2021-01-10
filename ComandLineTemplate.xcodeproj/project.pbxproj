@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4832484025AB44F2009F8167 /* GildedRoseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4832483F25AB44F2009F8167 /* GildedRoseProtocol.swift */; };
+		4832484925AB53DC009F8167 /* GildedRoseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4832483F25AB44F2009F8167 /* GildedRoseProtocol.swift */; };
 		48A4DD8325A9F98C00AC3673 /* GildedRose.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A4DD8125A9F98C00AC3673 /* GildedRose.swift */; };
 		48A4DD8425A9F98C00AC3673 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A4DD8225A9F98C00AC3673 /* Item.swift */; };
 		48A4DD9F25AA082A00AC3673 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BEF7AC22ABCFB0001507A1 /* main.swift */; };
@@ -30,6 +32,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4832483F25AB44F2009F8167 /* GildedRoseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GildedRoseProtocol.swift; sourceTree = "<group>"; };
 		48A4DD8125A9F98C00AC3673 /* GildedRose.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GildedRose.swift; sourceTree = "<group>"; };
 		48A4DD8225A9F98C00AC3673 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		48A4DDAA25AA222800AC3673 /* TestedResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestedResults.swift; sourceTree = "<group>"; };
@@ -82,6 +85,7 @@
 				48BEF7AC22ABCFB0001507A1 /* main.swift */,
 				48A4DD8125A9F98C00AC3673 /* GildedRose.swift */,
 				48A4DD8225A9F98C00AC3673 /* Item.swift */,
+				4832483F25AB44F2009F8167 /* GildedRoseProtocol.swift */,
 			);
 			path = ComandLineTemplate;
 			sourceTree = "<group>";
@@ -187,6 +191,7 @@
 				48BEF7AD22ABCFB0001507A1 /* main.swift in Sources */,
 				48A4DD8425A9F98C00AC3673 /* Item.swift in Sources */,
 				48A4DD8325A9F98C00AC3673 /* GildedRose.swift in Sources */,
+				4832484025AB44F2009F8167 /* GildedRoseProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,6 +202,7 @@
 				48A4DDA525AA082F00AC3673 /* Item.swift in Sources */,
 				48A4DD9F25AA082A00AC3673 /* main.swift in Sources */,
 				48A4DDA225AA082C00AC3673 /* GildedRose.swift in Sources */,
+				4832484925AB53DC009F8167 /* GildedRoseProtocol.swift in Sources */,
 				48A4DDAB25AA222800AC3673 /* TestedResults.swift in Sources */,
 				48BEF7BA22ABCFEA001507A1 /* ClassTemplateTest.swift in Sources */,
 			);
