@@ -9,9 +9,9 @@ class ParentGildedRose: GildedRoseProtocol {
     var item: Item {
         return _item
     }
-    
+
     init(item: Item) {
-        self._item = item
+        _item = item
     }
 }
 
@@ -19,46 +19,45 @@ class AgedBrie: ParentGildedRose {
     override var item: Item {
         _item.decreaseSellIn()
         _item.increaseQuality()
-        if (_item.sellIn < 0) {
+        if _item.sellIn < 0 {
             _item.increaseQuality()
         }
         return _item
     }
-
 }
 
 class Backstage: ParentGildedRose {
     override var item: Item {
         _item.decreaseSellIn()
-        
+
         _item.increaseQuality()
-        if (_item.sellIn < 11) {
+        if _item.sellIn < 11 {
             _item.increaseQuality()
         }
-        
-        if (_item.sellIn < 6) {
+
+        if _item.sellIn < 6 {
             _item.increaseQuality()
         }
-        
-        if (_item.sellIn < 0) {
+
+        if _item.sellIn < 0 {
             _item.setQualityToZero()
         }
-        
+
         return _item
     }
 }
 
-class Sulfuras: ParentGildedRose { }
+class Sulfuras: ParentGildedRose {}
 
 class CommonGildedRose: ParentGildedRose {
     override var item: Item {
         _item.decreaseSellIn()
         _item.decreaseQuality()
-        
-        if (_item.sellIn < 0) {
+
+        if _item.sellIn < 0 {
             _item.decreaseQuality()
         }
-        
+
         return _item
     }
 }
@@ -68,11 +67,11 @@ class ConjuredManaCake: ParentGildedRose {
         _item.decreaseQuality()
         _item.decreaseQuality()
 
-        if (_item.sellIn < 0) {
+        if _item.sellIn < 0 {
             _item.decreaseQuality()
             _item.decreaseQuality()
         }
-        
+
         return _item
     }
 }

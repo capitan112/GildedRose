@@ -9,10 +9,10 @@
 /* Begin PBXBuildFile section */
 		4832484025AB44F2009F8167 /* GildedRoseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4832483F25AB44F2009F8167 /* GildedRoseProtocol.swift */; };
 		4832484925AB53DC009F8167 /* GildedRoseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4832483F25AB44F2009F8167 /* GildedRoseProtocol.swift */; };
+		4832485425AB58B5009F8167 /* GildedRose.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A4DD8125A9F98C00AC3673 /* GildedRose.swift */; };
 		48A4DD8325A9F98C00AC3673 /* GildedRose.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A4DD8125A9F98C00AC3673 /* GildedRose.swift */; };
 		48A4DD8425A9F98C00AC3673 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A4DD8225A9F98C00AC3673 /* Item.swift */; };
 		48A4DD9F25AA082A00AC3673 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BEF7AC22ABCFB0001507A1 /* main.swift */; };
-		48A4DDA225AA082C00AC3673 /* GildedRose.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A4DD8125A9F98C00AC3673 /* GildedRose.swift */; };
 		48A4DDA525AA082F00AC3673 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A4DD8225A9F98C00AC3673 /* Item.swift */; };
 		48A4DDAB25AA222800AC3673 /* TestedResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A4DDAA25AA222800AC3673 /* TestedResults.swift */; };
 		48BEF7AD22ABCFB0001507A1 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BEF7AC22ABCFB0001507A1 /* main.swift */; };
@@ -144,7 +144,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1020;
-				LastUpgradeCheck = 1020;
+				LastUpgradeCheck = 1220;
 				ORGANIZATIONNAME = "Oleksiy Chebotarov";
 				TargetAttributes = {
 					48BEF7A822ABCFB0001507A1 = {
@@ -200,8 +200,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				48A4DDA525AA082F00AC3673 /* Item.swift in Sources */,
+				4832485425AB58B5009F8167 /* GildedRose.swift in Sources */,
 				48A4DD9F25AA082A00AC3673 /* main.swift in Sources */,
-				48A4DDA225AA082C00AC3673 /* GildedRose.swift in Sources */,
 				4832484925AB53DC009F8167 /* GildedRoseProtocol.swift in Sources */,
 				48A4DDAB25AA222800AC3673 /* TestedResults.swift in Sources */,
 				48BEF7BA22ABCFEA001507A1 /* ClassTemplateTest.swift in Sources */,
@@ -237,6 +237,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -298,6 +299,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -329,6 +331,7 @@
 		48BEF7B122ABCFB0001507A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M3S4J75265;
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
@@ -340,6 +343,7 @@
 		48BEF7B222ABCFB0001507A1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M3S4J75265;
 				MACOSX_DEPLOYMENT_TARGET = 10.14;

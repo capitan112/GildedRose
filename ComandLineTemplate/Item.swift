@@ -4,7 +4,7 @@ public class Item {
     public var name: String
     public var sellIn: Int
     public var quality: Int
-    
+
     public init(name: String, sellIn: Int, quality: Int) {
         self.name = name
         self.sellIn = sellIn
@@ -14,7 +14,7 @@ public class Item {
 
 extension Item: CustomStringConvertible {
     public var description: String {
-        return self.name + ", " + String(self.sellIn) + ", " + String(self.quality);
+        return name + ", " + String(sellIn) + ", " + String(quality)
     }
 }
 
@@ -24,17 +24,17 @@ extension Item {
             quality += 1
         }
     }
-    
+
     func decreaseQuality() {
         if quality > 0 {
             quality -= 1
         }
     }
-    
+
     func setQualityToZero() {
         quality = 0
     }
-    
+
     func decreaseSellIn() {
         sellIn -= 1
     }

@@ -46,7 +46,7 @@ Backstage passes to a TAFKAL80ETC concert, 4, 50
 Conjured Mana Cake, 2, 5
 
 """
-    
+
 let resultDay3 = """
 -------- day 0 --------
 name, sellIn, quality
